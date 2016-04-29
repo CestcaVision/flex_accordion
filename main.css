@@ -1,0 +1,50 @@
+.frame  {
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:400px;
+  height:400px;
+  margin-left: -200px;
+  margin-top: -200px;
+  background: #666;
+}
+.boxs {
+    display: flex;
+  	flex-direction: row;
+  	justify-content:space-around;
+  	width: 100%;
+  	height: 100%;
+    overflow: hidden;
+}
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:20%;
+  flex: 1 1 auto;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+.text {
+  transform: scale(0.5);
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: transparent;
+  transition: all .5s ease-in-out;
+}
+.box:hover {
+  width:100%;
+}
+.box:hover .text{
+  color:white;
+  transform: scale(1);
+}
+
+.box:nth-child(odd){
+  background: #4AF2A1
+}
+.box:nth-child(even){
+  background: #4FBDF2;
+}
